@@ -1,4 +1,4 @@
-// Type definitions for @hcaptcha/react-hcaptcha 0.1
+// Type definitions for @hcaptcha/react-hcaptcha 0.3
 // Project: https://github.com/hCaptcha/react-hcaptcha
 // Definitions by: Matt Sutkowski <https://github.com/msutkowski>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -24,6 +24,13 @@ interface HCaptchaProps {
     tabIndex?: number;
     id?: string;
     reCaptchaCompat?: boolean;
+    apihost?: string;
+    assethost?: string;
+    endpoint?: string;
+    host?: string;
+    imghost?: string;
+    reportapi?: string;
+    sentry?: string;
 }
 
 declare class HCaptcha extends React.Component<HCaptchaProps, HCaptchaState> {
